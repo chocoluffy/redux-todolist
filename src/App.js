@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TextInput from './TextInput';
 import TodoList from './TodoList';
+import { connect } from 'react-redux';
 
 export default class App extends Component {
 

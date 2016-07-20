@@ -7,6 +7,7 @@ export default class TextInput extends Component {
 
 	render(){
 		return (
+			
 			<div>
 				<input placeholder="typing something here..."></input>
 				<button>Submit</button>

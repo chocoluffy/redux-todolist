@@ -16,6 +16,12 @@ export default function reducer(state, action){
 			})
 		case 'REMOVE_ALL':
 			return { todos: [] }
+		case 'COMPLETE_TODO':
+			return Object.assign({}, state, {
+				todos: state.todos.map((todo) => {
+					return todo.id === action.id ? Object.assign({}, todo, {isCompleted: true}) : todo;
+				})
+			})
 		default:
 			return state;
 	}

@@ -9,6 +9,12 @@ let actions = {
 		return {
 			type: 'REMOVE_ALL'
 		}
+	},
+	completeTodo: function(id){
+		return {
+			type: "COMPLETE_TODO",
+			id: id
+		}
 	}
 }
 

@@ -4,7 +4,7 @@ import actions from '../action/actions'
 class TodoItem extends Component {
 	constructor(props){
 		super(props);
-		this._onComplete = this._onComplete.bind(this);
+		// this._onComplete = this._onComplete.bind(this);
 		// this._onDelete = this._onDelete.bind(this);
 	}
 
@@ -17,11 +17,10 @@ class TodoItem extends Component {
 	// }
 
 	render(){
-		console.log(this);
 		return (
 			<li>
 				<div>{this.props.todo.text}</div>
-				<button onClick={this._onComplete} >Complete</button>
+				<button onClick={this._onComplete.bind(this)} >Complete</button>
 			</li>
 		)
 	}

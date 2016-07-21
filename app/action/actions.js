@@ -15,6 +15,12 @@ let actions = {
 			type: "COMPLETE_TODO",
 			id: id
 		}
+	},
+	removeTodo: function(id){
+		return {
+			type: "REMOVE_TODO",
+			id: id
+		}
 	}
 }
 

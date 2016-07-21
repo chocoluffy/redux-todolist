@@ -22,6 +22,12 @@ export default function reducer(state, action){
 					return todo.id === action.id ? Object.assign({}, todo, {isCompleted: !todo.isCompleted}) : todo;
 				})
 			})
+		case 'REMOVE_TODO':
+			return Object.assign({}, state, {
+				todos: state.todos.filter((todo) => {
+					return todo.id !== action.id;
+				})
+			})
 		default:
 			return state;
 	}

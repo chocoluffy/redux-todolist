@@ -15,11 +15,23 @@ class TodoItem extends Component {
 	// _onDelete(){
 	// 	this.props.dispatch(actions.removeTodo(this.props.todo.id))
 	// }
+	
 
 	render(){
+		var todoText;
+		if(this.props.todo.isCompleted){
+			todoText = (
+				<div><s>{this.props.todo.text}</s></div>
+			)
+		}
+		else{
+			todoText = (
+				<div>{this.props.todo.text}</div>
+			)
+		}
 		return (
 			<li>
-				<div>{this.props.todo.text}</div>
+				{todoText}
 				<button onClick={this._onComplete.bind(this)} >Complete</button>
 			</li>
 		)

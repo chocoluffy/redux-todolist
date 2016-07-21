@@ -24,14 +24,16 @@ export default class TextInput extends Component {
 
 	render(){
 		return (
-			
 			<div>
-				<input 
-					placeholder="typing something here..."
-					value={this.state.inputText}
-					onChange={this._onChange}
-				/>
-				<button onClick={this._onClick}>Submit</button>
+				<form onSubmit={this._onClick}>
+					<input 
+						placeholder="typing something here..."
+						value={this.state.inputText}
+						onChange={this._onChange}
+					/>
+					<input type="submit" text="Submit"/>
+				</form>
+	
 			</div>
 		)
 	}

@@ -16,7 +16,6 @@ export default class TodoList extends Component {
 		return (
 			<div>
 				<ul>
-				
 				{
 					this.props.todos.map((todo) => {
 						return (

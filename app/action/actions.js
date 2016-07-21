@@ -4,6 +4,11 @@ let actions = {
 			type: 'ADD_TODO',
 			text: text
 		}
+	},
+	removeAll: function(){
+		return {
+			type: 'REMOVE_ALL'
+		}
 	}
 }
 

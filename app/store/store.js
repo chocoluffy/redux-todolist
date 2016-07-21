@@ -3,7 +3,8 @@ import reducer from '../reducer/reducer'
 import logger from 'redux-logger'
 
 let finalCreateStore = compose(
-  applyMiddleware(logger())
+  applyMiddleware(logger()),
+  window.devToolsExtension ? window.devToolsExtension() : f => f
 )(createStore)
 
 

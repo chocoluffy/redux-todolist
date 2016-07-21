@@ -1,7 +1,7 @@
 function getId(state) {
 	return state.todos.reduce((maxId, todo) => {
 		return Math.max(maxId, todo.id)
-	}, -1)
+	}, -1) + 1;
 }
 
 export default function reducer(state, action){

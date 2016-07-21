@@ -1,4 +1,4 @@
-export default actions = {
+let actions = {
 	addTodo: function(text){
 		return {
 			type: 'ADD_TODO',
@@ -6,3 +6,5 @@ export default actions = {
 		}
 	}
 }
+
+export default actions

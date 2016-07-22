@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node server.js",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "build": "NODE_ENV=production webpack --config ./webpack.production.config.js --progress"
   },
   "devDependencies": {
     "babel-core": "^6.0.20",
@@ -19,6 +20,8 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
+    "autoprefixer": "^6.3.7",
+    "html-webpack-plugin": "^2.22.0",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
     "react-redux": "^4.4.5",

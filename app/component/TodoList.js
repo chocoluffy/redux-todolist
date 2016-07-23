@@ -20,7 +20,7 @@ export default class TodoList extends Component {
 				{
 					this.props.todos.map((todo) => {
 						return (
-							<TodoItem key={todo.id} todo={todo} dispatch={this.props.dispatch} />
+							<TodoItem key={todo.id} todo={todo} actions={this.props.actions} />
 						)
 					})
 				}

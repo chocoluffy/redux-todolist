@@ -19,7 +19,7 @@ export default class TextInput extends Component {
 
 	_onClick(event){
 		event.preventDefault();
-		this.props.dispatch(actions.addTodo(this.state.inputText));
+		this.props.addTodo(this.state.inputText);
 	}
 
 	render(){

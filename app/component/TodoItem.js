@@ -9,11 +9,11 @@ class TodoItem extends Component {
 	}
 
 	_onComplete(){
-		this.props.dispatch(actions.completeTodo(this.props.todo.id))
+		this.props.actions.completeTodo(this.props.todo.id)
 	}
 
 	_onDelete(){
-		this.props.dispatch(actions.removeTodo(this.props.todo.id))
+		this.props.actions.removeTodo(this.props.todo.id)
 	}
 	
 	renderTodoText(){

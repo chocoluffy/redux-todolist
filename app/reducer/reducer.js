@@ -28,6 +28,10 @@ export default function reducer(state, action){
 					return todo.id !== action.id;
 				})
 			})
+		case 'CHANGE_USER_ID':
+			return Object.assign({}, state, {
+				user: Object.assign({}, state.user,  {userID: action.userID})
+			})
 		default:
 			return state;
 	}

@@ -12,14 +12,20 @@ let actions = {
 	},
 	completeTodo: function(id){
 		return {
-			type: "COMPLETE_TODO",
+			type: 'COMPLETE_TODO',
 			id: id
 		}
 	},
 	removeTodo: function(id){
 		return {
-			type: "REMOVE_TODO",
+			type: 'REMOVE_TODO',
 			id: id
+		}
+	},
+	changeUserID: function(){
+		return {
+			type: 'CHANGE_USER_ID',
+			userID: Math.round(Math.random()*20) 
 		}
 	}
 }

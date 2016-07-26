@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 let initialState = {
   todos: [{
     id: 0,
-    completed: false,
+    isCompleted: false,
     text: 'Initial todo for demo purposes'
   }],
   user: {

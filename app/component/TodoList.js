@@ -10,7 +10,7 @@ export default class TodoList extends Component {
 
 	_onClick(event){
 		event.preventDefault();
-		this.props.dispatch(actions.removeAll())
+		this.props.actions.removeAll()
 	}
 
 	render(){
